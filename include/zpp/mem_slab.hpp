@@ -102,7 +102,7 @@ public:
   void deallocate(void* vp) noexcept
   {
     if (vp != nullptr) {
-      k_mem_slab_free(native_handle(), &vp);
+      k_mem_slab_free(native_handle(), vp);
     }
   }
 
